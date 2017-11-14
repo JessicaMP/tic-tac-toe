@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
+body {
+  background-image: url(../assets/images/rayos.gif);
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+h2 {
+  z-index: 1;
+  color: white;
+  font-size: 60px;
+  text-shadow: 5px 5px black;
+  padding-bottom: 100px;
+}
+
+.h2-first {
+  transform: rotate(-30deg);
+  padding-right: 150px;
+}
+
+.h2-second {
+  transform: rotate(30deg);
+  padding-left: 150px;
+}
+
+div {
+  display: inline-block;
+}
+
+.table {
+  width: 500px;
+  height: 500px;
+  background-image: url(../assets/images/fondo.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateY(8%);
+}
+
+.board {
+  margin: 60px auto;
+  border-collapse: collapse;
+}
+
+.board td {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  border: 5px solid white;
+  font-size: 40px;
+  cursor: default;
+}
+
+.board tr:first-child td {
+  border-top: 0;
+}
+
+.board tr:last-child td {
+  border-bottom: 0;
+}
+
+.board tr td:first-child {
+  border-left: 0;
+}
+
+.board tr td:last-child {
+  border-right: 0;
+}
+
+.play-x {
+  color: aqua;/*black*/
+  /*background-color: aqua;*/
+}
+
+.play-o {
+  color: purple; /*#f25 */
+  /*background-color: purple;*/
+}
+
+.message {
+  height: 25px;
+  margin-bottom: 30px;
+}
+
+#winMessage {
+  font-size: 1.5em;
+  color: #40d683;
+}
+
+#reset {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff007c;
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-shadow: 1px 2px black;
+}
+.button {
+  display: block;
+}
+
+#reset:focus {
+  outline: none;
+}
+
+#reset:hover {
+  background-color: #D10066;
+}
